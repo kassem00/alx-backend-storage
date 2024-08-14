@@ -34,7 +34,10 @@ class Cache:
         return key
 
     def get(self, key: str, fn: Callable = None):
-        """Retrieve data from Redis and apply an optional conversion function."""
+        """
+        Retrieve data from Redis and apply an
+        optional conversion function.
+        """
         data = self._redis.get(key)
         if data is None:
             return None
