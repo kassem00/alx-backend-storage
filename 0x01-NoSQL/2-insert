@@ -1,0 +1,3 @@
+# insert data into specfic column
+echo 'use my_db;
+db.my_collection.insert({ name: "Holberton school" });'
